@@ -3,7 +3,7 @@ import javax.swing.*;
 
 public class Database {
     static Connection connect() throws Exception {
-        return DriverManager.getConnection("jdbc:mysql://localhost/hotel_db", "root", "");
+        return DriverManager.getConnection("jdbc:mysql://localhost/hotel_db", "root", ""); //here the password is null,please changeit.
     }
 
     public static boolean authenticate(String user, String pass) {
